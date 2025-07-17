@@ -30,15 +30,17 @@ const HeroSection = () => {
                     variants={tagVariants}
                     className='pb-6 text-muted-foreground xl:pb-10'
                 >
-                    Interior design is the art and science of enhancing interiors to achieve a healthier and more aesthetically pleasing environment. It blends creativity, functionality, and style to transform spaces into meaningful experiences tailored to your lifestyle and needs.
+                    Interior design is the art and science of enhancing interiors to achieve a healthier and more aesthetically pleasing environment.
                 </motion.p>
                 <motion.div
                     initial="offscreen"
                     whileInView={"onscreen"}
                     variants={tagVariants} 
                 >
-                    <Button className="inline-flex items-center px-8 py-8 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2">
-                        Book Now <TbArrowUpRight className="w-5 h-5 ml-2" />
+                    <Button  className="inline-flex items-center px-8 py-8 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2" >
+                        <a href="https://wa.me/919821735526?text=Hello%20VP%20Group%2C%20I'm%20interested..." target="_blank" rel="noopener noreferrer">
+                            Chat with us on WhatsApp
+                        </a>
                     </Button>
                 </motion.div>
             </div>

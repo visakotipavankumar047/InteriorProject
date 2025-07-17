@@ -1,14 +1,14 @@
 import Link from "next/link";
-import logo_f from '../public/logo_f.png';
+import logo4 from "../public/logo4.png";
 import Image from "next/image";
 
 const Logo = () => {
   return (
     <Link href='/'>
         <Image
-            src={logo_f}
-            width={100}
-            height={100} 
+            src={logo4}
+            width={120}
+            height={120} 
             alt="logo"
         />
     </Link>

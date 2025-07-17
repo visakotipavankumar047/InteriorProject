@@ -30,7 +30,7 @@ const Header = () => {
         >
             <div className='container mx-auto'>
                 <div className='flex items-center justify-between'>
-                    {/*Logo Section* */}
+                    {/*Logo Section* */} 
                     <Logo />
                     <div className='flex items-center gap-x-6'>
                         {/*Nav Section* */}

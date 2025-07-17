@@ -8,29 +8,33 @@ export default function ServicesSection() {
             id: '05',
             catagory: 'INTERIOR DESIGN',
             title : 'Premium Interior Design',
-            image: '/image/badroom.jpg',
-            descripion: "family drowing room with a clean and comfortble design for your family"
+            image: '/image/interior1.jpeg',
+            href : '/interiordesign',
+            descripion: "Crafting bespoke luxury interiors where your vision meets timeless design and flawless execution."
         },
         {
             id: '06',
             catagory: 'WATER PROOOFING',
             title : 'Premium Waterproofing Solutions',
-            image: '/image/kitchen1.jpg',
-            descripion: "family drowing room with a clean and comfortble design for your family"
+            image: '/image/waterproofing.jpeg',
+            href : '/waterproofing',
+            descripion: "Protecting your peace of mind by keeping your property perfectly dry."
         },
         {
             id: '07',
             catagory: 'CUSTOM FURNITURE',
             title : 'Premium Furniture Solutions',
-            image: '/image/drowing.jpg',
-            descripion: "family drowing room with a clean and comfortble design for your family"
+            image: '/image/custom1.jpeg',
+            href : '/customfurniture',
+            descripion: "Designed for your space, crafted for your life."
         },
         {
             id: '08',
             catagory: 'EXTERIOR DESIGNING',
             title : 'Premium Exterior Solutions',
-            image: '/image/living.jpg',
-            descripion: "family drowing room with a clean and comfortble design for your family"
+            image: '/image/exterior1.jpeg',
+            href : '/exteriordesign',
+            descripion: "A complete design vision, captivating at the curb and comforting within."
         },
     ]
 
@@ -59,7 +63,7 @@ export default function ServicesSection() {
                                 </div>
                                 <a className="block text-xl font-semibold" href=''>{item.title}</a>
                                 <p className='py-4'>{item.descripion}</p>
-                                <a className="inline-flex items-center font-medium" href="">See Details <TbArrowNarrowRight className='ml-2' /></a>
+                                <a className="inline-flex items-center font-medium" href={item.href}>See Details <TbArrowNarrowRight className='ml-2' /></a>
                             </div>
 
                             <div className='inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden'>
