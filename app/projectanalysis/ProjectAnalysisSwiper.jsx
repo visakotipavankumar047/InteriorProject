@@ -77,7 +77,7 @@ export default function InteriorDesignSection() {
             >
                 <SwiperSlide>
                     <Image
-                        src='/image/images/w1.jpg'
+                        src='/image/images/w6.jpg'
                         alt="Interior Image 1"
                         width={520}
                         height={220}
@@ -86,7 +86,7 @@ export default function InteriorDesignSection() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src='/image/images/w2.png'
+                        src='/image/images/w7.png'
                         alt="Interior Image 2"
                         width={520}
                         height={220}
@@ -95,7 +95,7 @@ export default function InteriorDesignSection() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src='/image/images/w5.jpg'
+                        src='/image/images/w8.jpeg'
                         alt="Interior Image 3"
                         width={520}
                         height={220}
@@ -104,7 +104,7 @@ export default function InteriorDesignSection() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src='/image/images/w4.jpg'
+                        src='/image/images/w9.jpg'
                         alt="Interior Image 4"
                         width={520}
                         height={220}

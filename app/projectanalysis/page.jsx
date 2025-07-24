@@ -49,10 +49,9 @@ const Page = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className='pb-20'>
-                <FirstServices />
-                <SecondServices />
-            </div>
+            <FirstServices />
+            <SecondServices />
+            <ProjectAnalysisSwiper />
         </div>
     )
 }
