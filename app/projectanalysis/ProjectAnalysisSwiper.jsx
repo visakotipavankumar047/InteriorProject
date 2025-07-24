@@ -86,7 +86,7 @@ export default function InteriorDesignSection() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src='/image/images/w7.png'
+                        src='/image/images/w7.jpg'
                         alt="Interior Image 2"
                         width={520}
                         height={220}
