@@ -41,38 +41,41 @@ export default function CatalogueSection() {
     return (
         <div className='grid gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 lg:divide-x'>
             {
-                items.map((item) =>(
+                items.map((item) => (
                     <div
                         key={item.id}
                         className='relative overflow-hidden group'
                     >
-                            <div>
-                                <Image
-                                    src={item.image}
-                                    width={300}
-                                    height={100}
-                                    alt=''
-                                    className='w-full ' 
-                                />
-                            </div>
+                        {/* Background Image */}
+                        <div>
+                            <Image
+                                src={item.image}
+                                width={300}
+                                height={100}
+                                alt=''
+                                className='w-full h-full object-cover'
+                            />
+                        </div>
 
-                            <div className='absolute top-0 p-8 bg-white text-black bg-opacity-60 backdrop-blur m-12'>
-                                <div className='flex justify-between pb-4'>
-                                    <p className='text-sm'>{item.catagory}</p>
-                                    <span>{item.id}</span>
-                                </div>
-                                <a className="block text-xl font-semibold" href=''>{item.title}</a>
-                                <p className='py-4'>{item.descripion}</p>
-                                <a className="inline-flex items-center font-medium" href={item.href}>See Details <TbArrowNarrowRight className='ml-2' /></a>
+                        {/* Frosted Overlay with rough border */}
+                        <div className='absolute top-0 m-6 p-6 bg-white/30 backdrop-blur-lg text-black rounded-xl border border-white/40 shadow-inner shadow-gray-300'>
+                            <div className='flex justify-between pb-4'>
+                                <p className='text-sm tracking-wider'>{item.catagory}</p>
+                                <span className='text-sm'>{item.id}</span>
                             </div>
+                            <a className="block text-xl font-semibold" href={item.href}>{item.title}</a>
+                            <p className='py-4 text-sm leading-relaxed'>{item.descripion}</p>
+                            <a className="inline-flex items-center font-medium text-sm hover:underline" href={item.href}>
+                                See Details <TbArrowNarrowRight className='ml-2' />
+                            </a>
+                        </div>
 
-                            <div className='inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden'>
-                                <p className='tracking-wider -rotate-90'>{item.catagory}</p>
-                                <span>{item.id}</span>
-                            </div>
+                        {/* Glassy Overlay on Hover */}
+                        <div className='inset-0 bg-tertiary/40 backdrop-blur-md flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden'>
+                            <p className='tracking-wider -rotate-90 text-xl font-semibold'>{item.catagory}</p>
+                            <span>{item.id}</span>
+                        </div>
                     </div>
-
-                    
                 ))
             }
         </div>

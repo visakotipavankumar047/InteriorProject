@@ -4,15 +4,18 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <Link href='/'>
+    <Link href="/">
+      <div className="flex items-center space-x-2">
         <Image
-            src={logo4}
-            width={120}
-            height={120} 
-            alt="logo"
+          src={logo4}
+          width={100}
+          height={100}
+          className="object-contain"
+          alt="Logo"
         />
+      </div>
     </Link>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

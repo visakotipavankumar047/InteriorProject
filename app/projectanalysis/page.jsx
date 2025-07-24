@@ -5,7 +5,7 @@ import { desVariants, tagVariants, titleVariants } from '@/utils/animation';
 import { motion, useScroll, useTransform } from 'framer-motion'
 import FirstServices from "@/app/projectanalysis/FirstServices";
 import SecondServices from "@/app/projectanalysis/SecondServices";
-import CatalogSwiperSection from "@/components/CatalogSwiperSection";
+import ProjectAnalysisSwiper from './ProjectAnalysisSwiper';
 
 const Page = () => {
     const ref = useRef(null);
@@ -51,7 +51,7 @@ const Page = () => {
             </div>
             <FirstServices />
             <SecondServices />
-            <CatalogSwiperSection />
+            <ProjectAnalysisSwiper />
         </div>
     )
 }
