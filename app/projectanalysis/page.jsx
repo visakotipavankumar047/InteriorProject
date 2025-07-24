@@ -25,11 +25,11 @@ const Page = () => {
                 <div className='items-center pt-10 pb-10 lg:flex gap-x-8'>
                     {/*Left Image Section* */}
                     <motion.div
-                        style={{scale}}
+                        style={{ scale }}
                         ref={ref}
 
                         className='w-full'>
-                        <Image src="/image/blueprint_and_interior_designing_plans.jpeg" width={700} height={700}  alt={"Project Analysis"} />
+                        <Image src="/image/blueprint_and_interior_designing_plans.jpeg" width={700} height={700} alt={"Project Analysis"} />
                     </motion.div>
 
                     {/*Right Content Section* */}
@@ -39,9 +39,9 @@ const Page = () => {
                         variants={tagVariants}
                     >
                         <p className='pb-8 tracking-wide mt-6'>
-                            Our expert team collaborates closely with clients, architects, and builders to meticulously review and enhance architectural blueprints.<br/> <br/>
-                            We don't just see lines on a page; we visualize traffic flow, furniture placement, lighting moods, and the rhythm of daily life within the structure. <br/> <br/>
-                            By cross-referencing your lifestyle needs and aesthetic vision with the architectural framework, we create a master plan that optimizes every square foot, prevents costly future revisions, and guarantees a seamless integration of form and function.<br/> <br/>
+                            Our expert team collaborates closely with clients, architects, and builders to meticulously review and enhance architectural blueprints.<br /> <br />
+                            We don't just see lines on a page; we visualize traffic flow, furniture placement, lighting moods, and the rhythm of daily life within the structure. <br /> <br />
+                            By cross-referencing your lifestyle needs and aesthetic vision with the architectural framework, we create a master plan that optimizes every square foot, prevents costly future revisions, and guarantees a seamless integration of form and function.<br /> <br />
                             <span className='text-xl font-extrabold tracking-tight'>
                                 The most beautiful interiors are born from the most intelligent plans. At VP Group, we ensure your home is perfect on paper, so it can be flawless in reality.
                             </span>
@@ -49,8 +49,10 @@ const Page = () => {
                     </motion.div>
                 </div>
             </div>
-            <FirstServices />
-            <SecondServices />
+            <div className='pb-20'>
+                <FirstServices />
+                <SecondServices />
+            </div>
         </div>
     )
 }
