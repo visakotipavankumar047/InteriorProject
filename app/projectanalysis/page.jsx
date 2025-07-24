@@ -51,7 +51,6 @@ const Page = () => {
             </div>
             <FirstServices />
             <SecondServices />
-            <ProjectAnalysisSwiper />
         </div>
     )
 }
